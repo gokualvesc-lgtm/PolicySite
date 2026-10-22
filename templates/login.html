@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiFun | Affiliate Access Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #101510;
+            color: #c8d8c8;
+            font-family: "Courier New", monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 430px;
+            border: 1px solid #3c6744;
+            background-color: #171e18;
+            box-shadow: 0 0 25px rgba(46, 139, 64, 0.12);
+        }
+
+        .header {
+            background-color: #1e3022;
+            border-bottom: 2px solid #4c9b5b;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #79d889;
+            font-size: 32px;
+            letter-spacing: 5px;
+        }
+
+        .header p {
+            margin-top: 8px;
+            color: #91aa96;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 30px 25px;
+        }
+
+        .warning {
+            color: #c2cfc4;
+            border-left: 3px solid #79d889;
+            background-color: #202a21;
+            padding: 12px;
+            font-size: 11px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #79d889;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background-color: #0d120e;
+            color: #d9f5dc;
+            border: 1px solid #3c6744;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #79d889;
+            box-shadow: 0 0 5px rgba(121, 216, 137, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background-color: #315e39;
+            color: #eaffed;
+            border: 1px solid #79d889;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #437d4d;
+        }
+
+        .footer {
+            border-top: 1px solid #2d4431;
+            padding: 15px;
+            text-align: center;
+            color: #718574;
+            font-size: 10px;
+            line-height: 1.8;
+        }
+
+        .status {
+            color: #79d889;
+            margin-bottom: 15px;
+            font-size: 11px;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .content {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="login-container">
+
+        <header class="header">
+            <h1>DIGIFUN</h1>
+            <p>AFFILIATE ACCESS PORTAL</p>
+        </header>
+
+        <section class="content">
+            <p class="status">● SISTEMA OPERACIONAL</p>
+
+            <div class="warning">
+                ACESSO RESTRITO<br>
+                Este portal é destinado exclusivamente
+                a funcionários e parceiros autorizados.
+            </div>
+
+            <form action="/login" method="POST">
+
+                <div class="form-group">
+                    <label for="username">NOME DE USUÁRIO</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Digite seu usuário"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">SENHA DE ACESSO</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit">ENTRAR NO SISTEMA</button>
+
+            </form>
+        </section>
+
+        <footer class="footer">
+            TERMINAL ID: DF-AP-015<br>
+            PORTAL DE AFILIADOS v2.4.1<br>
+            ÚLTIMA ATUALIZAÇÃO: 08/06/2015
+        </footer>
+
+    </main>
+</body>
+</html>

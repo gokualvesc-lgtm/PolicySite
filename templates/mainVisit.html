@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiFun | Portal Corporativo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #101510;
+            color: #c8d8c8;
+            font-family: "Courier New", monospace;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1b2a1e;
+            border-bottom: 2px solid #579764;
+            padding: 25px 8%;
+        }
+
+        header h1 {
+            color: #79d889;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            color: #8ca992;
+            font-size: 11px;
+            margin-top: 8px;
+        }
+
+        nav {
+            background: #151e17;
+            border-bottom: 1px solid #304b35;
+            padding: 12px 8%;
+            color: #79d889;
+            font-size: 12px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            background: #18231a;
+            border-left: 4px solid #79d889;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            color: #a7e7b0;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            color: #79d889;
+            font-size: 14px;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #304b35;
+        }
+
+        .card {
+            background: #171e18;
+            border: 1px solid #304b35;
+            padding: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #79d889;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 12px;
+            line-height: 2;
+            overflow-wrap: anywhere;
+        }
+
+        .label {
+            color: #829c87;
+        }
+
+        .value {
+            color: #d8e8da;
+        }
+
+        .lockdown {
+            background: #281919;
+            border: 1px solid #754343;
+            padding: 22px;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.9;
+        }
+
+        .lockdown h3 {
+            color: #e28d8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .lockdown ol {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        .lockdown li {
+            margin-bottom: 8px;
+        }
+
+        .alert {
+            color: #e28d8d;
+            font-weight: bold;
+        }
+
+        footer {
+            border-top: 1px solid #304b35;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 50px;
+            color: #718574;
+            font-size: 10px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 500px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav {
+                padding: 12px 20px;
+            }
+
+            main {
+                margin-top: 25px;
+                padding: 0 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DIGIFUN</h1>
+        <p>PORTAL CORPORATIVO DE AFILIADOS</p>
+    </header>
+
+    <nav>
+        INÍCIO / REGISTROS CORPORATIVOS
+    </nav>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Portal de informações corporativas</h2>
+            <p>
+                Bem-vindo ao sistema de afiliados da DigiFun.
+                Consulte abaixo os registros disponíveis para sua conta.
+            </p>
+        </section>
+
+        <h2 class="section-title">01 — Administração</h2>
+
+        <section class="card">
+            <h3>DADOS DA EMPRESA</h3>
+
+            <p>
+                <span class="label">Empresa:</span>
+                <span class="value">DigiFun Entertainment</span>
+            </p>
+
+            <p>
+                <span class="label">Fundadora:</span>
+                <span class="value">Ana Luchsinger</span>
+            </p>
+        </section>
+
+        <h2 class="section-title">02 — Endereços registrados</h2>
+
+        <section class="card">
+            <h3>ESTABELECIMENTO AFILIADO</h3>
+
+            <p>
+                <span class="label">Nome:</span>
+                DigiPlays Pizza
+            </p>
+
+            <p>
+                <span class="label">Endereço:</span>
+                <span class="value">Rua Domingo Padres, 110</span>
+            </p>
+        </section>
+
+        <h2 class="section-title">03 — Comunicado de emergência</h2>
+
+        <section class="lockdown">
+
+            <h3>PROTOCOLO DE LOCKDOWN — PRIORIDADE MÁXIMA</h3>
+
+            <p><strong>Documento:</strong> DF-EMG-0813</p>
+            <p><strong>Data:</strong> 13/08/2010</p>
+            <p><strong>Emissor:</strong> Administração central</p>
+            <p><strong>Assunto:</strong> Isolamento imediato da instalação</p>
+
+            <br>
+
+            Por determinação da administração, o protocolo de
+            segurança deverá ser ativado imediatamente.
+
+            <ol>
+                <li>Bloquear todas as entradas e saídas da instalação.</li>
+                <li>Interromper as comunicações externas.</li>
+                <li>Suspender as atividades em todos os departamentos.</li>
+                <li>Impedir a saída de equipamentos e documentos.</li>
+                <li>Aguardar novas instruções da administração central.</li>
+            </ol>
+
+            <p>
+                <strong>ADENDO:</strong> Nenhum funcionário está
+                autorizado a desativar o protocolo sem permissão
+                expressa da administração.
+            </p>
+
+            <br>
+
+            <p class="alert">
+                STATUS DO PROTOCOLO: ATIVO<br>
+                ENCERRAMENTO OFICIAL: NÃO REGISTRADO
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        DIGIFUN ENTERTAINMENT<br>
+        PORTAL CORPORATIVO v2.4.1<br>
+        DOCUMENTAÇÃO FICTÍCIA PARA CAMPANHA DE RPG
+    </footer>
+
+</body>
+</html>

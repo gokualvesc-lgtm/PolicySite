@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiFun | Portal Corporativo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #101510;
+            color: #c8d8c8;
+            font-family: "Courier New", monospace;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1b2a1e;
+            border-bottom: 2px solid #579764;
+            padding: 22px 8%;
+        }
+
+        header h1 {
+            color: #79d889;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+
+        header p {
+            color: #8ca992;
+            font-size: 11px;
+            margin-top: 8px;
+        }
+
+        nav {
+            background: #151e17;
+            border-bottom: 1px solid #304b35;
+            padding: 12px 8%;
+            color: #79d889;
+            font-size: 12px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            border-left: 4px solid #79d889;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            background: #18231a;
+        }
+
+        .welcome h2 {
+            color: #a7e7b0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .welcome p {
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            color: #79d889;
+            font-size: 15px;
+            margin: 30px 0 15px;
+            border-bottom: 1px solid #304b35;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #171e18;
+            border: 1px solid #304b35;
+            padding: 20px;
+            min-width: 0;
+        }
+
+        .card h3 {
+            color: #79d889;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 12px;
+            line-height: 1.9;
+            overflow-wrap: anywhere;
+        }
+
+        .label {
+            color: #829c87;
+        }
+
+        .value {
+            color: #d8e8da;
+        }
+
+        .notice {
+            border: 1px solid #776b36;
+            background: #282517;
+            padding: 18px;
+            margin-top: 25px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .notice h3 {
+            color: #e3d27a;
+            margin-bottom: 10px;
+        }
+
+        .restricted {
+            color: #c8d8c8;
+            border: 1px solid #754343;
+            background: #281919;
+            padding: 18px;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .restricted h3 {
+            color: #e28d8d;
+            margin-bottom: 10px;
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .map-room {
+            border: 1px solid #579764;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .map-room strong {
+            display: block;
+            color: #79d889;
+            margin-bottom: 10px;
+        }
+
+        .map-room p {
+            line-height: 1.8;
+        }
+
+        .map-storage {
+            border-color: #776b36;
+        }
+
+        .map-storage strong {
+            color: #e3d27a;
+        }
+
+        .map-restricted {
+            border: 1px dashed #754343;
+        }
+
+        .map-restricted strong {
+            color: #e28d8d;
+        }
+
+        .emergency-list {
+            padding-left: 20px;
+        }
+
+        .emergency-list li {
+            margin: 7px 0;
+        }
+
+        .alert-text {
+            color: #e28d8d;
+        }
+
+        .footer {
+            border-top: 1px solid #304b35;
+            text-align: center;
+            padding: 25px 15px;
+            color: #718574;
+            font-size: 10px;
+            line-height: 1.8;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 500px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                padding: 12px 20px;
+            }
+
+            main {
+                margin-top: 20px;
+                padding: 0 14px;
+            }
+
+            .map-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>DIGIFUN</h1>
+    <p>PORTAL CORPORATIVO DE AFILIADOS</p>
+</header>
+
+<nav>
+    INÍCIO / REGISTROS CORPORATIVOS / ACESSO AUTORIZADO
+</nav>
+
+<main>
+
+    <section class="welcome">
+        <h2>Bem-vindo ao portal de afiliados</h2>
+        <p>
+            Este sistema contém informações corporativas destinadas
+            a funcionários, parceiros e estabelecimentos afiliados.
+        </p>
+        <p>STATUS DO SISTEMA: OPERACIONAL</p>
+    </section>
+
+    <!-- 01: Dados da empresa -->
+
+    <h2 class="section-title">01 — Dados da empresa</h2>
+
+    <section class="grid">
+
+        <article class="card">
+            <h3>IDENTIFICAÇÃO CORPORATIVA</h3>
+            <p><span class="label">Empresa:</span>
+                <span class="value">DigiFun Entertainment</span></p>
+            <p><span class="label">Fundação:</span>
+                <span class="value">2005</span></p>
+            <p><span class="label">Atividade:</span>
+                <span class="value">Entretenimento familiar e animatrônicos</span></p>
+            <p><span class="label">Situação:</span>
+                <span class="value">Operações suspensas</span></p>
+        </article>
+
+        <article class="card">
+            <h3>ADMINISTRAÇÃO</h3>
+            <p><span class="label">Fundadora:</span>
+                <span class="value">Ana Luchsinger</span></p>
+            <p><span class="label">Cofundador:</span>
+                <span class="value">Robert Pattinson</span></p>
+            <p><span class="label">Direção científica:</span>
+                <span class="value">Dr. Harley Davidson</span></p>
+            <p><span class="label">Registro:</span> DF-CORP-2005</p>
+        </article>
+
+    </section>
+
+    <!-- 02: Instalações -->
+
+    <h2 class="section-title">02 — Instalações registradas</h2>
+
+    <section class="grid">
+
+        <article class="card">
+            <h3>SEDE INDUSTRIAL</h3>
+            <p><span class="label">Tipo:</span> Fábrica e centro de pesquisa</p>
+            <p><span class="label">Endereço:</span> Rua Industrial, 410</p>
+            <p><span class="label">Departamento:</span> Pesquisa e desenvolvimento</p>
+            <p><span class="label">Acesso:</span> Somente pessoal autorizado</p>
+        </article>
+
+        <article class="card">
+            <h3>ESTABELECIMENTO AFILIADO</h3>
+            <p><span class="label">Nome:</span> DigiPlays Pizza</p>
+            <p><span class="label">Endereço:</span> Rua Domingo Padres, 110</p>
+            <p><span class="label">Parceiro comercial:</span> Chuck E. Cheese</p>
+            <p><span class="label">Referência:</span> DP-CC/2015-06</p>
+        </article>
+
+    </section>
+
+    <!-- 03: Registros administrativos -->
+
+    <h2 class="section-title">03 — Registros administrativos</h2>
+
+    <section class="grid">
+
+        <article class="card">
+            <h3>TRANSFERÊNCIAS COMERCIAIS</h3>
+            <p>Documento: DP-2015-00871</p>
+            <p>Data: 08/06/2015</p>
+            <p>Valor registrado: R$ 100.000,00</p>
+            <p>Destinatário: Chuck E. Cheese</p>
+            <p><span class="label">Status:</span> Registro arquivado</p>
+        </article>
+
+        <article class="card">
+            <h3>INVENTÁRIO DE EQUIPAMENTOS</h3>
+            <p>Categoria: Sistemas animatrônicos</p>
+            <p>Departamento responsável: Pesquisa</p>
+            <p>Última revisão: 12/08/2010</p>
+            <p><span class="label">Observação:</span> Inventário incompleto.</p>
+        </article>
+
+    </section>
+
+    <section class="notice">
+        <h3>AVISO ADMINISTRATIVO</h3>
+        Alguns registros históricos foram transferidos para o
+        arquivo físico da sede industrial.
+        <br><br>
+        Solicitações de acesso a documentos anteriores a agosto
+        de 2010 devem ser encaminhadas à administração.
+    </section>
+
+    <!-- 04: Histórico de manutenção -->
+
+    <h2 class="section-title">04 — Histórico de manutenção</h2>
+
+    <section class="grid">
+
+        <article class="card">
+            <h3>REGISTRO DE MANUTENÇÃO — #MNT-0810</h3>
+            <p><span class="label">Data:</span> 12/08/2010</p>
+            <p><span class="label">Equipamento:</span> Unidade K-01</p>
+            <p><span class="label">Departamento:</span> Pesquisa e desenvolvimento</p>
+            <p><span class="label">Ocorrência:</span>
+                Comportamento fora dos parâmetros previstos.</p>
+            <p><span class="label">Ação registrada:</span> Inspeção solicitada.</p>
+            <p><span class="label">Responsável:</span> Dr. Harley Davidson</p>
+        </article>
+
+        <article class="card">
+            <h3>RECOLHIMENTO DE UNIDADES — #REC-0813</h3>
+            <p><span class="label">Data:</span> 13/08/2010</p>
+            <p><span class="label">Unidades afetadas:</span> 17</p>
+            <p><span class="label">Local de origem:</span> Restaurantes afiliados</p>
+            <p><span class="label">Destino:</span> Sede industrial</p>
+            <p><span class="label">Motivo:</span> Manutenção extraordinária.</p>
+            <p><span class="label">Observação:</span>
+                Nenhum relatório individual anexado.</p>
+        </article>
+
+    </section>
+
+    <!-- 05: Mapa simplificado -->
+
+    <h2 class="section-title">05 — Mapa simplificado das instalações</h2>
+
+    <section class="card">
+        <h3>SEDE INDUSTRIAL — PLANTA ADMINISTRATIVA</h3>
+
+        <p>
+            Planta resumida destinada a funcionários e parceiros.
+            Áreas restritas não estão representadas.
+        </p>
+
+        <div class="map-grid">
+
+            <div class="map-room">
+                <strong>BLOCO A</strong>
+                <p>Recepção</p>
+                <p>Administração</p>
+            </div>
+
+            <div class="map-room">
+                <strong>BLOCO B</strong>
+                <p>Pesquisa</p>
+                <p>Laboratórios</p>
+            </div>
+
+            <div class="map-room map-storage">
+                <strong>BLOCO C</strong>
+                <p>Armazenamento</p>
+                <p>Acesso controlado</p>
+            </div>
+
+            <div class="map-room map-restricted">
+                <strong>ÁREA RESTRITA</strong>
+                <p>Planta indisponível</p>
+                <p>Autorização necessária</p>
+            </div>
+
+        </div>
+
+        <p style="margin-top: 15px; color: #829c87;">
+            NOTA: Esta planta não representa os níveis subterrâneos
+            nem os setores desativados da instalação.
+        </p>
+    </section>
+
+    <!-- 06: Comunicado de emergência -->
+
+    <h2 class="section-title">06 — Comunicado de emergência</h2>
+
+    <section class="restricted">
+
+        <h3>COMUNICADO INTERNO — PRIORIDADE MÁXIMA</h3>
+
+        <p><strong>Documento:</strong> DF-EMG-0813</p>
+        <p><strong>Data:</strong> 13/08/2010</p>
+        <p><strong>Emissor:</strong> Administração central</p>
+        <p><strong>Assunto:</strong> Suspensão imediata das operações</p>
+
+        <br>
+
+        Por determinação da administração, todas as atividades
+        da sede industrial deverão ser interrompidas imediatamente.
+
+        <br><br>
+
+        <ol class="emergency-list">
+            <li>Interromper os testes em andamento.</li>
+            <li>Suspender o acesso de funcionários não autorizados.</li>
+            <li>Ativar os protocolos internos de segurança.</li>
+            <li>Não remover equipamentos ou documentos da instalação.</li>
+            <li>Aguardar novas instruções da administração central.</li>
+        </ol>
+
+        <br>
+
+        <strong>ADENDO:</strong> As comunicações externas deverão
+        permanecer suspensas até nova autorização.
+
+        <br><br>
+
+        <strong class="alert-text">
+            AVISO: Não existe autorização registrada para o
+            encerramento deste protocolo.
+        </strong>
+
+    </section>
+
+    <!-- 07: Nota sobre arquivos restritos -->
+
+    <h2 class="section-title">07 — Arquivos restritos</h2>
+
+    <section class="restricted">
+        <h3>ACESSO LIMITADO</h3>
+
+        A documentação referente ao projeto CRUnidos não está
+        disponível neste portal.
+
+        <br><br>
+
+        Consulte o departamento responsável por pesquisa e
+        desenvolvimento para obter autorização.
+
+        <br><br>
+
+        <span class="alert-text">
+            Referência encontrada: INFANTOS_ORIGINAL.dat
+            <br>
+            Status do arquivo: INDISPONÍVEL
+        </span>
+    </section>
+
+</main>
+
+<footer class="footer">
+    DIGIFUN ENTERTAINMENT — SISTEMA CORPORATIVO<br>
+    PORTAL v2.4.1 | REGISTRO INTERNO DF-AP-015<br>
+    DOCUMENTAÇÃO FICTÍCIA PARA CAMPANHA DE RPG
+</footer>
+
+</body>
+</html>
